@@ -37,7 +37,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="p-8 rounded-3xl bg-white/[0.02] border border-white/[0.05] hover:bg-white/[0.04] transition-colors"
+            className="p-8 rounded-3xl bg-white/2 border border-white/5 hover:bg-white/4 transition-colors"
           >
             <div className="text-blue-500 mb-6">{feature.icon}</div>
             <h3 className="text-xl font-semibold text-white mb-2">

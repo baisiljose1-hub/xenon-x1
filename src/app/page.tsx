@@ -1,10 +1,14 @@
 "use client";
 
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
+
+// Import all our completed sections
 import Hero from "@/components/sections/Hero";
 import Intro from "@/components/sections/Intro";
 import ScrollShowcase from "@/components/sections/ScrollShowcase";
 import Features from "@/components/sections/Features";
+import Specs from "@/components/sections/Specs";
+import Cta from "@/components/sections/Cta";
 
 export default function Home() {
   // Initialize Lenis smooth scrolling for the entire page
@@ -16,19 +20,8 @@ export default function Home() {
       <Intro />
       <ScrollShowcase />
       <Features />
-
-      {/* Simple Footer/CTA */}
-      <section className="py-48 flex flex-col items-center justify-center text-center px-6">
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8">
-          Ready to evolve?
-        </h2>
-        <p className="text-xl text-gray-400 mb-10 max-w-2xl">
-          Order today and experience the future of personal computing tomorrow.
-        </p>
-        <button className="bg-white text-black px-10 py-5 rounded-full text-lg font-medium hover:scale-105 transition-transform">
-          Pre-order Xenon X1
-        </button>
-      </section>
+      <Specs />
+      <Cta />
     </main>
   );
 }
